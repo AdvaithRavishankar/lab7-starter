@@ -48,8 +48,6 @@ function addRecipesToDocument(recipes) {
 		recipeCard.data = recipes[i];
 		mainEl.appendChild(recipeCard);
 	};
-
-	console.log(mainEl.querySelector('recipe-card'));
 }
 
 /**

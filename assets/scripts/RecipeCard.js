@@ -149,8 +149,6 @@ class RecipeCard extends HTMLElement {
 		<p class="ingredients">
 			${data.ingredients}
 		</p>`;
-
-		console.log(article);
 	}
 }
 
