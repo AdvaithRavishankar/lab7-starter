@@ -83,8 +83,8 @@ function initFormHandler() {
 		//            values from the FormData object and insert them into recipeObject
 		let recipeObject = {};
 		
-		for (let i = 0; i < formData.length; i++){
-			recipeObject[formData[i].id] = formData[i].value;
+		for (const pair of formData.entries()){
+			recipeObject[pair[0]] = pair[1];
 		}
 
 		// B6. TODO - Create a new <recipe-card> element
@@ -117,4 +117,4 @@ function initFormHandler() {
 		let main = document.querySelector('main');
 		main.innerHTML = ``;
 	});		
-}
+};
